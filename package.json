@@ -1,0 +1,62 @@
+{
+  "name": "@safeheron/mm-key-recovery",
+  "version": "0.5.1",
+  "description": "Zero knowledge proof",
+  "keywords": [
+    "vsss",
+    "sss",
+    "snamp",
+    "key recovery"
+  ],
+  "type": "commonjs",
+  "homepage": "https://github.com/Safeheron/snap-offline-recovery-tool",
+  "bugs": {
+    "url": "https://github.com/Safeheron/snap-offline-recovery-tool/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/Safeheron/snap-offline-recovery-tool"
+  },
+  "license": "MIT",
+  "author": "Max<hejh1500@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "index.ts",
+  "types": "index.d.ts",
+  "browser": {
+    "buffer": false
+  },
+  "scripts": {
+    "lint": "standardx",
+    "build": "rm -fr ./dist && tsc -p tsconfig.json",
+    "test": "rm -fr ./test-dist && tsc -p tsconfig.test.json && mocha -r ts-node/register ./test-dist/test/*"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.1.1",
+    "babel-eslint": "^10.0.3",
+    "mocha": "^10.2.0",
+    "standardx": "^5.0.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "@safeheron/crypto-rand": "^1.0.0",
+    "@safeheron/crypto-utils": "^1.0.1",
+    "assert": "^2.0.0",
+    "bip39": "^3.1.0",
+    "blakejs": "^1.1.0",
+    "bn.js": "^4.11.9",
+    "crypto-js": "3.3.0",
+    "elliptic": "^6.5.3",
+    "hash.js": "^1.1.7",
+    "typescript": "^4.0.5"
+  },
+  "standardx": {
+    "parser": "babel-eslint",
+    "env": [
+      "mocha"
+    ]
+  },
+  "publishConfig": {}
+}
