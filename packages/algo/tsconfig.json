@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "module": "commonjs",
-    "rootDir": ".",
+    "module": "ESNext",
+    "rootDir": "./src",
     "outDir": "dist",
     "target": "es6",
     "sourceMap": true,
@@ -11,8 +11,7 @@
     "moduleResolution": "Node"
   },
   "include": [
-    "./lib/**/*",
-    "index.ts"
+    "./src"
   ],
   "exclude": [
     "./test",
