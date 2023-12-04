@@ -1,0 +1,10 @@
+@import "bulma/css/bulma.css";
+@import "react-toastify/dist/ReactToastify.css";
+
+:root {
+  --toastify-color-success: #485fc7 !important;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

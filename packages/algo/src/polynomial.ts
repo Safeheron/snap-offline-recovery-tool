@@ -81,6 +81,7 @@ export class Polynomial {
             for (let m = 0; m < threshold; m++) {
                 if(m !== j){
                     let xm = points[m][0].toRed(ctx)
+                    // @ts-ignore
                     num = num.redMul(x.redSub(xm))
                     den = den.redMul(xj.redSub(xm))
                 }
@@ -182,6 +183,7 @@ export class Polynomial {
         let gv = commits[0]
         for( let i = 1; i < threshold; i++){
             let iRed = new BN(i.toString(), 10)
+            // @ts-ignore
             gv = gv.add(commits[i].mul(x.redPow(iRed)))
         }
         let gy = curve.g.mul(y)
@@ -215,6 +217,7 @@ export class Polynomial {
             for (let m = 0; m < xArray.length; m++) {
                 if(m !== j){
                     let xm = xArray[m].toRed(ctx)
+                    // @ts-ignore
                     num = num.redMul(x.redSub(xm))
                     den = den.redMul(xj.redSub(xm))
                 }

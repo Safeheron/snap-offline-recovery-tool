@@ -1,21 +1,38 @@
-# snap-offline-recovery-tool
+# Safeheron Snap's Offline Private Key Recovery Tool
 
-## Run
+---
 
-```shell
-npm install
-npm test
+The offline private key recovery tool for Safeheron Snap is a simple and efficient way to help users of Safeheron Snap to recover their MPC wallets.
 
+Please at least use 2 backup mnemonic phrases to successfully recover the wallet.
 
-  Test Vsss:
-- privateKeyHex =  2d6ded8e919390dbbace77df049f16fd79eae77f0ff296b7974453779e1de29d
-- share  0  : [ 1 ,  wild say faith turkey blush put garbage fuel dream term neglect output wealth slush shiver utility resist chief output chicken armed utility glass boy ]
+## How to Use
 
-- share  1  : [ 2 ,  silver away dog rare way use stable under plate okay give dream plug reopen voice welcome daughter reject insect twenty speak repair curve duty ]
+ Download the latest `index.html` from [the releases page](https://github.com/Safeheron/snap-offline-recovery-tool/releases) and open it using the browser you prefer. 
+ Follow the prompts to disconnect your device from the network (VPN included) and enter the backup mnemonic phrases 
+ to restore the original private key.
 
-- share  2  : [ 3 ,  nose genius congress kangaroo stumble cost else knock antenna federal cost tray fever pass cave acquire reunion dragon error put noise lamp answer negative ]
+<img src="./recover-landing.png" width="500px">
 
-- privateKeyHex =  2d6ded8e919390dbbace77df049f16fd79eae77f0ff296b7974453779e1de29d
+<img src="./recover-step.png" width="500px">
 
+## Running it Locally
 
+Clone this repository:
+
+`git clone https://github.com/Safeheron/snap-offline-recovery-tool`
+
+`cd snap-offline-recovery-tool`
+
+### Development
+
+```bash
+yarn 
+yarn run dev
+```
+
+### Build
+```
+yarn
+yarn run build
 ```
