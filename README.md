@@ -2,15 +2,16 @@
 
 ---
 
-The offline private key recovery tool for Safeheron Snap is a simple and efficient way to help users of Safeheron Snap to recover their MPC wallets.
+The offline private key recovery tool for Safeheron Snap is a simple and efficient way to 
+help users of Safeheron Snap to recover their private key of Safeheron Snap Wallet in a disaster.
 
-Please at least use 2 backup mnemonic phrases to successfully recover the wallet.
+Please at least use 2 backup mnemonic phrases to successfully recover the key.
 
 ## How to Use
 
  Download the latest `index.html` from [the releases page](https://github.com/Safeheron/snap-offline-recovery-tool/releases) and open it using the browser you prefer. 
  Follow the prompts to disconnect your device from the network (VPN included) and enter the backup mnemonic phrases 
- to restore the original private key.
+ to recover the private key.
 
 <img src="./recover-landing.png" width="500px">
 
