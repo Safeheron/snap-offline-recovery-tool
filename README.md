@@ -1,7 +1,5 @@
 # Safeheron Snap's Offline Private Key Recovery Tool
 
----
-
 The offline private key recovery tool for Safeheron Snap is a simple and efficient way to 
 help users of Safeheron Snap to recover their private key of Safeheron Snap Wallet in a disaster.
 
